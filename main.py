@@ -28,9 +28,9 @@ def get_instagram_datas(driver, stores):
     time.sleep(5)
     # 나중에 하기 입력
     # btn_later1.click()
-    btn_later1 = driver.find_element("xpath", "//*[contains(@class, '_ac8f')]")
-    btn_later1.click()
-    time.sleep(2)
+    # btn_later1 = driver.find_element("xpath", "//*[contains(@class, '_ac8f')]")
+    # btn_later1.click()
+    # time.sleep(2)
     # 알림 설정 ("나중에 하기 버튼 클릭")
     btn_later2 = driver.find_element("css selector", '._a9--._a9_1')
     btn_later2.click()
@@ -47,7 +47,7 @@ def get_instagram_datas(driver, stores):
         btn_search.click()
         time.sleep(2)
         #검색 입력
-        search_input = driver.find_element("css selector", "._aauy")
+        search_input = driver.find_element("css selector", "._aawg > input")
         search_input.send_keys(store)
         time.sleep(2)
         search_input.send_keys(Keys.RETURN)
